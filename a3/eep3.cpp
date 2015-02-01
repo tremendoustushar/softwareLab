@@ -5,7 +5,7 @@
 /* Input: from the command line (for file I/O, redirect input file to terminal and standard output to output file)
 		first line: comma-separated integers (set S); numbers do not have to be unique
 		second line: integer k
-		yolo! yolo!
+		yolo!
 */
 
 using namespace std;
