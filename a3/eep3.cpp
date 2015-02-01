@@ -9,6 +9,13 @@
 
 using namespace std;
 
+void printThemNumbers(int a, int b, int c, int d){
+	cout << a << "," << b << "," << c << "," << d << "\n";
+	cout << a << "," << b << "," << d << "," << c << "\n";
+	cout << b << "," << a << "," << c << "," << d << "\n";
+	cout << b << "," << a << "," << d << "," << c << "\n";
+}
+
 int main(){
 	// Input the set S
 	cout << "Enter the set S as comma separated values:\n>> ";
@@ -52,6 +59,7 @@ int main(){
 						if (i4 != i1 && i4 != i2){
 							d = ar[i4];
 							if(a+b+(c*d)<k){
+								printThemNumbers(a, b, c, d);
 						cout << ar[i1] << "," << ar[i2] << "," << ar[i3] << "," << ar[i4] << "\n";
 						cout << ar[i1] << "," << ar[i2] << "," << ar[i4] << "," << ar[i3] << "\n";
 						cout << ar[i2] << "," << ar[i1] << "," << ar[i3] << "," << ar[i4] << "\n";
