@@ -60,10 +60,6 @@ int main(){
 							d = ar[i4];
 							if(a+b+(c*d)<k){
 								printThemNumbers(a, b, c, d);
-						cout << ar[i1] << "," << ar[i2] << "," << ar[i3] << "," << ar[i4] << "\n";
-						cout << ar[i1] << "," << ar[i2] << "," << ar[i4] << "," << ar[i3] << "\n";
-						cout << ar[i2] << "," << ar[i1] << "," << ar[i3] << "," << ar[i4] << "\n";
-						cout << ar[i2] << "," << ar[i1] << "," << ar[i4] << "," << ar[i3] << "\n";
 							}
 						}
 					}
