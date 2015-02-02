@@ -12,12 +12,13 @@
 
 using namespace std;
 /* For every valid combination, output the solutions (a,b,c,d), (a,b,d,c), (b,a,c,d), and (b,a,d,c), since all of these are solutions if a+b+c*d < k, as addition & multiplication of integers is commutative.
+ * if a!=b & c!=d.
 */
 void printThemNumbers(int a, int b, int c, int d){
 	cout << a << "," << b << "," << c << "," << d << "\n";
-	cout << a << "," << b << "," << d << "," << c << "\n";
-	cout << b << "," << a << "," << c << "," << d << "\n";
-	cout << b << "," << a << "," << d << "," << c << "\n";
+	if (c!=d) cout << a << "," << b << "," << d << "," << c << "\n";
+	if (a!=b) cout << b << "," << a << "," << c << "," << d << "\n";
+	if (a!=b && c!=d) cout << b << "," << a << "," << d << "," << c << "\n";
 }
 
 int main(){
